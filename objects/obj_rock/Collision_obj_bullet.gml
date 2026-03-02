@@ -6,10 +6,12 @@
 if(obj_game.powerup_time < 0){	/// @DnDAction : YoYo Games.Random.Choose
 	/// @DnDVersion : 1
 	/// @DnDHash : 35EFFEF9
+	/// @DnDInput : 2
 	/// @DnDParent : 47AC5218
 	/// @DnDArgument : "var" "obj"
 	/// @DnDArgument : "option" "obj_powerup_ghost"
-	obj = choose(obj_powerup_ghost);
+	/// @DnDArgument : "option_1" "obj_powerup_spread"
+	obj = choose(obj_powerup_ghost, obj_powerup_spread);
 
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1

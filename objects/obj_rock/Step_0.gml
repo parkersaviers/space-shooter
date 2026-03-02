@@ -8,5 +8,6 @@ move_wrap(1, 1, 100);
 /// @DnDVersion : 1
 /// @DnDHash : 452CF29B
 /// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr_relative" "1"
 /// @DnDArgument : "var" "image_angle"
-image_angle = 1;
+image_angle += 1;
