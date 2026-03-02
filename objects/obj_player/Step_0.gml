@@ -61,4 +61,52 @@ var l5DFB0AE3_0;l5DFB0AE3_0 = mouse_check_button_pressed(mb_left);if (l5DFB0AE
 	/// @DnDArgument : "soundid" "snd_shoot"
 	/// @DnDArgument : "pitch" "random_range(0.8, 1.2)"
 	/// @DnDSaveInfo : "soundid" "snd_shoot"
-	audio_play_sound(snd_shoot, 0, 0, 1.0, undefined, random_range(0.8, 1.2));}
+	audio_play_sound(snd_shoot, 0, 0, 1.0, undefined, random_range(0.8, 1.2));
+
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 76F4FA3B
+	/// @DnDParent : 5DFB0AE3
+	/// @DnDArgument : "var" "powerup"
+	/// @DnDArgument : "value" "1"
+	if(powerup == 1){	/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 328EEA8C
+		/// @DnDParent : 76F4FA3B
+		/// @DnDArgument : "xpos_relative" "1"
+		/// @DnDArgument : "ypos_relative" "1"
+		/// @DnDArgument : "var" "bullet"
+		/// @DnDArgument : "var_temp" "1"
+		/// @DnDArgument : "objectid" "obj_bullet"
+		/// @DnDSaveInfo : "objectid" "obj_bullet"
+		var bullet = instance_create_layer(x + 0, y + 0, "Instances", obj_bullet);
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 56D39D1B
+		/// @DnDParent : 76F4FA3B
+		/// @DnDArgument : "expr" "10"
+		/// @DnDArgument : "expr_relative" "1"
+		/// @DnDArgument : "var" "bullet.direction"
+		bullet.direction += 10;
+	
+		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 2DC46925
+		/// @DnDParent : 76F4FA3B
+		/// @DnDArgument : "xpos_relative" "1"
+		/// @DnDArgument : "ypos_relative" "1"
+		/// @DnDArgument : "var" "bullet"
+		/// @DnDArgument : "var_temp" "1"
+		/// @DnDArgument : "objectid" "obj_bullet"
+		/// @DnDSaveInfo : "objectid" "obj_bullet"
+		var bullet = instance_create_layer(x + 0, y + 0, "Instances", obj_bullet);
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 724ACE7C
+		/// @DnDParent : 76F4FA3B
+		/// @DnDArgument : "expr" "-10"
+		/// @DnDArgument : "expr_relative" "1"
+		/// @DnDArgument : "var" "bullet.direction"
+		bullet.direction += -10;}}
