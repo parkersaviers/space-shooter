@@ -14,9 +14,9 @@ alarm_set(0, 10*60);
 /// @DnDAction : YoYo Games.Instances.Color_Sprite
 /// @DnDVersion : 1
 /// @DnDHash : 0C2E5DD9
-/// @DnDArgument : "colour" "$80FF6D63"
-image_blend = $80FF6D63 & $ffffff;
-image_alpha = ($80FF6D63 >> 24) / $ff;
+/// @DnDArgument : "colour" "$7D00FF00"
+image_blend = $7D00FF00 & $ffffff;
+image_alpha = ($7D00FF00 >> 24) / $ff;
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
